@@ -35,8 +35,9 @@
 ---------------------------------------------------------------------------------------------------
 
 ## RESOURCES & REFRENCES
-1. PDK & DRC Manual  [PDK](https://github.com/silicon-vlsi/SI-2025-AnalogIC/blob/main/docs/skywater-pdk-readthedocs-io-en-main.pdf).
-2. MEMS mic  [Datasheet](https://cdn.sparkfun.com/assets/0/5/8/b/1/SPH8878LR5H-1_Lovato_DS.pdf).
-3. 
-
+1. PDK & DRC Manual  [PDK]https://github.com/silicon-vlsi/SI-2025-AnalogIC/blob/main/docs/skywater-pdk-readthedocs-io-en-main.pdf.
+2. MEMS mic  [Datasheet]https://cdn.sparkfun.com/assets/0/5/8/b/1/SPH8878LR5H-1_Lovato_DS.pdf.
+3. OP-AMP-344 [Datasheet]https://www.ti.com/lit/ds/symlink/opa345.pdf?ts=1748277734116&ref_url=https%253A%252F%252Fwww.google.com%252F.
+4. Schematic [Sparkfun breakout Board]https://cdn.sparkfun.com/assets/7/5/6/e/d/SparkFun_Analog_MEMS_Microphone_Breakout_SPH8878LR5H-1.pdf.
+   
 
