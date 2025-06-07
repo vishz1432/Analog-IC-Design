@@ -45,5 +45,6 @@
 ### DAY-1
 
 ***Calculate Thevenins Eqivalent of Microphone*** 
-   
+   ![image](https://github.com/user-attachments/assets/d37c7979-a279-427b-b419-542bcb5d5a04)
+
 
