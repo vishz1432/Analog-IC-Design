@@ -203,6 +203,41 @@ a
       ![image](https://github.com/user-attachments/assets/15ea22d4-5245-4d34-8607-02a15dc21cf8)
 
 
+- Create the single-pole model of the OpAmp as whown in the figure.
+
+     - Write the s-domain expresion of the transfer function of the Op-Amp.
+
+- Substitute the model in the high-pass filter.
+- Repeat the high-pass filter simulation and measuement with the new OpAmp model and note the differences you observe.
+
+    ![image](https://github.com/user-attachments/assets/d094270a-da5d-4714-8595-fae92ebf72bc)
+
+- Substitute the singl-pole OpAmp model in the above figure.
+  
+- **Operating point**
+  
+   - Back annotate the operating point to the schematic and verify.
+
+- **AC simulation**
+    
+    - plot output voltage (in dB) and phase (in deg).
+    - measure the maximum gain and the frequency at the gain.
+    - measure the -3 dB frequency and verify with your calaculation.
+
+- **Transient Simulation**
+  
+   - Provide an input with a sine wave of 1mV at three frequencies:
+         
+      - -3 dB frequency of the high-pass corner.
+      - Frequency at maximum gain.
+      - -3 dB frequency of the low-pass corner.
+
+   - Measure the peak-to-peak voltage at the output and verify with AC sim results.
+
+  
+
+
+
 
 
     
