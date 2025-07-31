@@ -212,7 +212,7 @@ a
 
     ![image](https://github.com/user-attachments/assets/d094270a-da5d-4714-8595-fae92ebf72bc)
 
-- Substitute the singl-pole OpAmp model in the above figure.
+- Substitute the single-pole OpAmp model in the above figure.
   
 - **Operating point**
   
