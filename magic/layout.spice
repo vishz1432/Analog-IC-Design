@@ -1,0 +1,11 @@
+* SPICE3 file created from siliwiz.ext - technology: siliwiz
+
+.global $VDD $GND 
+
+.subckt siliwiz in out vdd vss
+M1000 out in vdd vdd pmos w=5.58u l=3.51u
++  ad=26.6166p pd=20.7u as=23.1012p ps=19.44u
+M1001 out in vss vss nmos w=4.14u l=3.51u
++  ad=19.7478p pd=17.82u as=17.1396p ps=16.56u
+.ends
+
