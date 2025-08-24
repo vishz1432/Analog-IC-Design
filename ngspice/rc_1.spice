@@ -1,0 +1,28 @@
+Title : Transient Experiment
+* parameter
+.PARAM vdd_var=3.3
+** Rc Network
+R1   vin   vout  1k
+C1   vout  GND   1p
+
+**stimuli
+Vsin  vin  GND   0 PULSE(0 vdd_var 1n 1p 1p 10n 20n)
+
+
+.MEASURE TRAN rise1090 TRIG v(vout) VAL='0.1*vdd_var' RISE=1 TARG v(vout) VAL='0.9*vdd_var' RISE=1
+.MEASURE TRAN fall9010 TRIG v(vout) VAL='0.9*vdd_var' fall=1 TARG v(vout) VAL='0.1*vdd_var' fall=1
+
+.MEASURE TRAN rise2080 TRIG v(vout) VAL='0.2*vdd_var' RISE=1 TARG v(vout) VAL='0.8*vdd_var' RISE=1
+.MEASURE TRAN fall8020 TRIG v(vout) VAL='0.8*vdd_var' fall=1 TARG v(vout) VAL='0.2*vdd_var' fall=1
+
+.MEASURE TRAN rise50 TRIG v(vout) VAL='0.5*vdd_var' RISE=1 TARG v(vout) VAL='0.5*vdd_var' RISE=1
+.MEASURE TRAN fall50 TRIG v(vout) VAL='0.5*vdd_var' fall=1 TARG v(vout) VAL='0.5*vdd_var' fall=1
+
+.MEASURE TRAN PWWidth TRIG v(vout) VAL='0.5*vdd_var' RISE=1 TARG v(vout) VAL='0.5*vdd_var' fall=1
+.MEASURE TRAN Period  TRIG v(vout) VAL='0.5*vdd_var' RISE=1 TARG v(vout) VAL='0.5*vdd_var' RISE=2
+.CONTROL
+OP
+TRAN 10p 40n
+.ENDC
+
+.GLOBAL GND

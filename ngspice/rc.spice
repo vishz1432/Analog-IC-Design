@@ -1,0 +1,27 @@
+Title : Transient Experiment 
+
+** Rc Network
+R1   vin   vout  1k
+C1   vout  GND   1p
+
+**stimuli
+Vsin  vin  GND   0 PULSE(0 5 1n 1p 1p 10n 20n)
+
+
+.MEASURE TRAN rise1090 TRIG v(vout) VAL=0.5 RISE=1 TARG v(vout) VAL=4.5 RISE=1
+.MEASURE TRAN fall9010 TRIG v(vout) VAL=4.5 fall=1 TARG v(vout) VAL=0.5 fall=1
+
+.MEASURE TRAN rise2080 TRIG v(vout) VAL=1.0 RISE=1 TARG v(vout) VAL=4.0 RISE=1
+.MEASURE TRAN fall8020 TRIG v(vout) VAL=4.0 fall=1 TARG v(vout) VAL=1.0 fall=1
+
+.MEASURE TRAN rise50 TRIG v(vout) VAL=2.5 RISE=1 TARG v(vout) VAL=2.5 RISE=1
+.MEASURE TRAN fall50 TRIG v(vout) VAL=2.5 fall=1 TARG v(vout) VAL=2.5 fall=1
+
+.MEASURE TRAN PWWidth TRIG v(vout) VAL=2.5 RISE=1 TARG v(vout) VAL=2.5 fall=1
+.MEASURE TRAN Period  TRIG v(vout) VAL=2.5 RISE=1 TARG v(vout) VAL=2.5  RISE=2
+.CONTROL
+OP
+TRAN 10p 40n
+.ENDC
+
+.GLOBAL GND 

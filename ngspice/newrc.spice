@@ -1,0 +1,16 @@
+.Title: RC circuit
+
+.PARAM vdd_var=1
+
+**netlist
+R1 vin vout 1k
+C1 vout 0  1p
+
+*Source
+Vp vin GND 0  PULSE(0 vdd_var 0.5n 1p 1p 1n 2n )
+
+*simulation
+.op
+.TRAN 10p 40n
+
+.END
