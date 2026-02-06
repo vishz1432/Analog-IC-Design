@@ -285,12 +285,62 @@ f_60------------------ 151.42MHz
 
 <img width="798" height="548" alt="image" src="https://github.com/user-attachments/assets/53dd0ec0-02da-40ca-81fe-5bc9dacf5730" />
 
+
 ### Creating Symbol for the OP - Amp
 
 <img width="527" height="326" alt="Screenshot 2026-02-06 124038" src="https://github.com/user-attachments/assets/57e6d966-b4cd-4dbb-b72f-6de2671c38b7" />
 
 
+
+***Mic_Test Circuit***
+
+
 <img width="622" height="337" alt="image" src="https://github.com/user-attachments/assets/8db247fe-fdb2-4f9a-99f8-acb14ad0dc32" />
+
+
+<img width="701" height="582" alt="image" src="https://github.com/user-attachments/assets/33b56bc1-ec39-4a63-88a2-1bd1a4546601" />
+
+
+```
+MAX-------------------- 21.83dB
+3db-------------------- 18.83dB
+f_pole----------------- 29.60kHz
+f_zero----------------- 1.48Hz
+```
+
+### Transient Simulation
+
+<img width="1117" height="482" alt="image" src="https://github.com/user-attachments/assets/959bfec1-1b99-420d-8683-3cfd2d101a9e" />
+
+```
+THD(Total Harmonic Distortion) = 28.52%
+```
+### REVIEW :
+- From the OPA-344 datasheet the gain is 120dB and the THD is 0.06%.
+ 1. For the common source differential amplifier which I have designed the gain is comming to be around 21dB which is very low.
+ 2. The THD is 28.52%
+
+
+-------------
+
+- The amplifier gain is very low so going for the telescopic amplifier.
+
+
+### Telescopic Amplifer with biasing circuit
+
+
+<img width="933" height="717" alt="Screenshot 2026-02-06 125131" src="https://github.com/user-attachments/assets/749c5fdf-4a89-4edc-81e5-34375211ed6a" />
+
+
+***Created the symbol for testing***
+
+
+
+<img width="637" height="450" alt="image" src="https://github.com/user-attachments/assets/8fc5e99a-0a6e-495e-9b2d-bf20c7914134" />
+
+
+
+
 
 
 
