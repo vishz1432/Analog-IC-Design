@@ -234,6 +234,70 @@ a
 
    - Measure the peak-to-peak voltage at the output and verify with AC sim results.
 
+  <img width="910" height="528" alt="image" src="https://github.com/user-attachments/assets/cec72015-43a9-45f2-b837-24fb154b396d" />
+
+- AC simulation
+- for a gain of 10000
+    - plot output voltage (in dB) and phase (in deg).
+
+<img width="966" height="777" alt="image" src="https://github.com/user-attachments/assets/ef596b21-e152-4a37-bd85-37b279cc2891" />
+
+<img width="977" height="777" alt="image" src="https://github.com/user-attachments/assets/dae07e96-f109-4682-8822-51b5ec66c8b8" />
+
+- measure the maximum gain and the frequency at the gain.
+- measure the -3 dB frequency and verify with your calaculation.
+
+```
+MAX-------------------- 35.37dB
+3db-------------------- 32.37dB
+f_pole----------------- 19.73kHz
+f_zero----------------- 6.63Hz
+f_mid------------------ 19.5Hz
+ph_pole---------------- -135`
+ph_zero---------------- -224.9`
+ph_mid----------------- -161.3`
+```
+
+<img width="675" height="386" alt="image" src="https://github.com/user-attachments/assets/fabeec6b-8976-4985-9e63-ca14846af70d" />
+
+<img width="947" height="398" alt="image" src="https://github.com/user-attachments/assets/312d097f-4d4d-4cec-856c-cd760d618b3e" />
+
+<img width="627" height="506" alt="image" src="https://github.com/user-attachments/assets/54de0b87-669e-4b15-9304-dabbfcad52ff" />
+
+```
+MAX-------------------- 34.91dB
+3db-------------------- 31.91dB
+f_pole----------------- 20.76kHz
+f_zero----------------- 6.3Hz
+f_60------------------ 151.42MHz
+```
+
+### OP-AMP Modeling Using Common Source Amplifier (Transistor Sizing Trade-offs)
+
+| Parameter        | Increased By        | Trade-offs            |
+|------------------|--------------------|----------------------|
+| Gain             | ↑ W, ↑ L           | Larger area, higher power |
+| Bandwidth        | ↓ L, ↑ Bias Current | Increased noise, higher power |
+| Output Swing     | ↑ L                | Reduced speed |
+| Slew Rate        | ↑ W                | More area, higher power |
+| Noise            | ↑ W                | Larger area |
+
+
+<img width="798" height="548" alt="image" src="https://github.com/user-attachments/assets/53dd0ec0-02da-40ca-81fe-5bc9dacf5730" />
+
+### Creating Symbol for the OP - Amp
+
+<img width="527" height="326" alt="Screenshot 2026-02-06 124038" src="https://github.com/user-attachments/assets/57e6d966-b4cd-4dbb-b72f-6de2671c38b7" />
+
+
+<img width="622" height="337" alt="image" src="https://github.com/user-attachments/assets/8db247fe-fdb2-4f9a-99f8-acb14ad0dc32" />
+
+
+
+
+
+
+
   
 
 
